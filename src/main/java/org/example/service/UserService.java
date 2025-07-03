@@ -34,7 +34,7 @@ public class UserService {
         log.info("Retrieving all users");
         return userRepository.findAll()
                 .stream()
-                .map(this::entityToDto)//Перевод всех Entity в Dto'шки
+                .map(this::entityToDto)
                 .toList();
     }
     public UserDto updateUser(UserDto userDto){
